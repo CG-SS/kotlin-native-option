@@ -1,3 +1,8 @@
+import dev.cgss.kotlin.native.Option
+import platform.posix.option
+
 fun main() {
-    println("Hello, Kotlin/Native!")
+    val opt = Option.of(1)
+    println("Hello, Kotlin/Native! " + opt.isEmpty())
+    
 }
